@@ -480,12 +480,13 @@ footer{
   position:relative;
 }
 #arrow{
-  position: sticky;
-  bottom:-10px;
-  right: -10px;
+  position: fixed;
+  bottom:5px;
+  right: 3px;
   color: red;
-  background-color: white;
+  background-color: rgb(170, 158, 158);
   opacity: 70%;
-  border: 2px solid white;
+  border: 3px solid white;
+  border-radius: 10%;
 
 }
