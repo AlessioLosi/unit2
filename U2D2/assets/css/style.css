@@ -458,16 +458,18 @@ header {
 }
 
 #tag {
-  position: absolute; 
+  position: absolute;
   right: 5px;
   top: 10px;
   color: rgb(168, 168, 168);
 }
-.undercontainers{
+
+.undercontainers {
   position: relative;
   z-index: 1;
 }
-.underline{
+
+.underline {
   position: absolute;
   z-index: -1;
   opacity: 70%;
@@ -476,12 +478,14 @@ header {
   right: 0px;
   width: 100%;
 }
-footer{
-  position:relative;
+
+footer {
+  position: relative;
 }
-#arrow{
+
+#arrow {
   position: fixed;
-  bottom:5px;
+  bottom: 5px;
   right: 3px;
   color: rgb(93, 9, 57);
   background-color: rgba(255, 255, 255, 0.541);
@@ -490,7 +494,9 @@ footer{
   z-index: 2;
 
 }
-#calendar, #addbox{
+
+#calendar,
+#addbox {
   position: fixed;
   right: 3px;
   color: rgb(27, 27, 155);
@@ -499,40 +505,55 @@ footer{
   border-radius: 10%;
   z-index: 5;
 }
-  @media screen  and (min-width: 500px){
-    #calendar{
-      bottom:40px;
-  }
-  #addbox{
-    bottom:70px;
-  }
-  }
-  @media screen and (min-width: 700px){
-    .tableleft {
 
-      position:static;
-
-    }
-  
-    table {
-      position: relative;
-      left:20%;
-      right: 40%;
-  
-    }
-  }
-  @media screen and (min-width: 800px){
-    .tableleft {
-
-      position:static;
-
-    }
-  
-    table {
-      position: relative;
-      left:50%;
-      right: 20%;
-  
-    }
+@media screen and (min-width: 500px) {
+  #calendar {
+    bottom: 40px;
   }
 
+  #addbox {
+    bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .tableleft {
+
+    position: static;
+
+  }
+
+  #calendar {
+    top: 0px;
+    position: fixed;
+    bottom: auto;
+  }
+
+  #addbox {
+    top: 30px;
+    position: fixed;
+    bottom: auto;
+  }
+
+  table {
+    position: relative;
+    left: 20%;
+    right: 40%;
+
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .tableleft {
+
+    position: static;
+
+  }
+
+  table {
+    position: relative;
+    left: 50%;
+    right: 20%;
+
+  }
+}
