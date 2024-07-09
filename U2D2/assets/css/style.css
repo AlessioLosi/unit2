@@ -510,14 +510,29 @@ footer{
   @media screen and (min-width: 700px){
     .tableleft {
 
-      position: relative;
-      width: 500px;
-      height: 500px;
+      position:static;
+
     }
   
     table {
-      position: absolute;
-      left: 80%;
-      right: 20%;
+      position: relative;
+      left:20%;
+      right: 40%;
+  
     }
   }
+  @media screen and (min-width: 800px){
+    .tableleft {
+
+      position:static;
+
+    }
+  
+    table {
+      position: relative;
+      left:50%;
+      right: 20%;
+  
+    }
+  }
+
